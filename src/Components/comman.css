@@ -1,0 +1,20 @@
+.sliderfont {
+    font-family: "Book Antiqua", Palatino, serif;
+    font-style: italic;
+    font-weight: medium;
+    color: #ffffff; 
+}
+.hide::-webkit-scrollbar
+  {
+      display: none;
+  }
+  .head{
+    font-family: Vollkorn, serif;
+  }
+.hide2{
+  .hide {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+ 
