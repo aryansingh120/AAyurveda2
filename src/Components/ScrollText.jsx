@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
-import "./Comman.css"
 
 const ScrollText = () => {
   const [velocity, setVelocity] = useState(50);
