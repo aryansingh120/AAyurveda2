@@ -82,14 +82,14 @@ const ProductDetails = () => {
       const data = await response.json();
       if (response.ok) {
         setQuantity(1);
-        alert("Item added to cart successfully!");
+        // alert("Item added to cart successfully!");
         navigate("/cartDetails");
       } else {
         throw new Error(data.message || "Failed to add item to cart");
       }
     } catch (error) {
       console.error("❌ Error:", error.message);
-      alert("Something went wrong while adding to cart.");
+      // alert("Something went wrong while adding to cart.");
     } finally {
       setIsAddingToCart(false); // Reset loading state
     }

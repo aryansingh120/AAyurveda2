@@ -51,7 +51,9 @@ const fetchCartItems = async () => {
         setProduct(response?.data);
       }
       else
-      alert("data not fetched")
+      console.log("data not fetched");
+      
+      // alert("data not fetched")
     } catch (error) {
       console.error("Error fetching cart items:", error);
     }
@@ -100,11 +102,13 @@ const handleOrderNow = async (product) => {
       }
     );
     if(response.status==200){
-      alert("quantity updated");
+      // alert("quantity updated");
       navigate("/orderAddress"); 
     }
     else
-    alert("quantity not updated");
+    console.log("quantity not updated");
+    
+    // alert("quantity not updated");
   } catch (error) {
     console.error("Error updating quantity in backend:", error);
   }

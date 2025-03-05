@@ -67,7 +67,7 @@ console.log(productId);
       rzp.open();
     } catch (error) {
       console.error("❌ Payment Error:", error);
-      alert("Payment Failed!");
+      // alert("Payment Failed!");
     } finally {
       setLoading(false);
     }
@@ -89,7 +89,7 @@ console.log(productId);
       if (!data.success) throw new Error("Payment verification failed!");
 
       console.log("✅ Payment Verified:", data);
-      alert("Order placed successfully!");
+      // alert("Order placed successfully!");
       navigate("/");
     } catch (error) {
       console.error("❌ Payment Verification Error:", error.message);
@@ -109,14 +109,16 @@ console.log(productId);
       });
       const data = await res.json();
       if (res.ok) {
-        alert("Order Placed Successfully!");
+        console.log("Order Placed Successfully!");
+        
+        // alert("Order Placed Successfully!");
       } else {
-        alert("Order Placement Failed!");
+        // alert("Order Placement Failed!");
         console.error("Error:", data.error);
       }
     } catch (error) {
       console.error("Order Error:", error);
-      alert("Something went wrong!");
+      // alert("Something went wrong!");
     } finally {
       setLoading(false);
     }
