@@ -39,7 +39,7 @@ const OrderAddress = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:2100/address/userAddress",
+        "https://aayurveda-hn8w.onrender.com/address/userAddress",
         address,
         {
           headers: {

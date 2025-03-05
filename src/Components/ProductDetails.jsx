@@ -70,7 +70,7 @@ const ProductDetails = () => {
     setIsAddingToCart(true); // Set loading state
 
     try {
-      const response = await fetch("http://localhost:2100/cart/cartadd", {
+      const response = await fetch("https://aayurveda-hn8w.onrender.com/cart/cartadd", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

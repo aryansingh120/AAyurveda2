@@ -15,7 +15,7 @@ console.log(productId);
   // ✅ Order ID + Amount Generate Karne Ka Function
   const generatePaymentOrder = async () => {
     try {
-      const response = await fetch("http://localhost:2100/razorpay/generatePayment", {
+      const response = await fetch("https://aayurveda-hn8w.onrender.com/razorpay/generatePayment", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -76,7 +76,7 @@ console.log(productId);
   // ✅ Payment Verification Backend Call
   const confirmPayment = async (paymentData, orderId) => {
     try {
-      const response = await fetch("http://localhost:2100/razorpay/verifyPayment", {
+      const response = await fetch("https://aayurveda-hn8w.onrender.com/razorpay/verifyPayment", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -100,7 +100,7 @@ console.log(productId);
   const handleCOD = async () => {
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:2100/cart/aman", {
+      const res = await fetch("https://aayurveda-hn8w.onrender.com/cart/aman", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

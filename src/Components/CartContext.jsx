@@ -41,7 +41,7 @@ const increasefetchCart = () => {
   };
 const fetchCartItems = async () => {
     try {
-      const response = await axios.get("http://localhost:2100/cart/allCart", {
+      const response = await axios.get("https://aayurveda-hn8w.onrender.com/cart/allCart", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -63,7 +63,7 @@ useEffect(()=>{
 const removeItem = async (cartItemId) => {
   try {
     const response = await axios.post(
-      "http://localhost:2100/cart/deleteCart",
+      "https://aayurveda-hn8w.onrender.com/cart/deleteCart",
       { productId: cartItemId },
       { headers: { Authorization: `Bearer ${token}` } }
     );
@@ -90,7 +90,7 @@ const handleOrderNow = async (product) => {
   setProductId(product.productId._id)
   try {
    const response= await axios.post(
-      "http://localhost:2100/cart/updateQuantity",
+      "https://aayurveda-hn8w.onrender.com/cart/updateQuantity",
       {
         productId: product.productId._id,
         quantity: product.quantity,

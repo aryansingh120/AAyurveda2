@@ -23,7 +23,7 @@ const VerifyOtp = () => {
     setSuccessMessage("");
 
     try {
-      const response = await axios.post("http://localhost:2100/user/verifyOtp", {
+      const response = await axios.post("https://aayurveda-hn8w.onrender.com/user/verifyOtp", {
         otp: otp,
       });
 

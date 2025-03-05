@@ -47,7 +47,7 @@ const SignupPage = () => {
         if (valid) {
             setIsProcessing(true);
             try {
-                const response = await axios.post("http://localhost:2100/user/signup", {
+                const response = await axios.post("https://aayurveda-hn8w.onrender.com/user/signup", {
                     fullName,
                     email,
                     password,
